@@ -1,0 +1,1182 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./images/theme/favicon.png">
+    <title>Trang & Kỷ | Thiệp cưới</title>
+    <meta
+      name="description"
+      content="Em trao nhành hoa, tôi gói con tim làm quà."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kytrangwedding.online" />
+    <meta property="og:title" content="Trang & Kỷ | Thiệp cưới" />
+    <meta
+      property="og:description"
+      content="Hôn nhân là chuyện cả đời. Yêu người vừa ý, cưới người mình thương ♥"
+    />
+    <meta
+      property="og:image"
+      content="./images/couple/og.webp"
+    />
+    <meta property="og:site_name" content="Trang & Kỷ | Thiệp cưới" />
+    <meta name="theme-color" content="#fff">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=The+Nautigal:wght@400;700&family=Viaoda+Libre&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <audio id="sfx" preload="auto" src="audio/open.mp3"></audio>
+    <audio id="bgm" loop preload="metadata" src="audio/nhac-nen.mp3"></audio>
+    <button
+      id="musicBtn"
+      class="music-btn"
+      type="button"
+      aria-pressed="false"
+      aria-label="Bật nhạc"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          class="note"
+          d="M9 18V5l11-2v13M9 18a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm11-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"
+        />
+        <line class="slash" x1="4" y1="4" x2="20" y2="20" />
+      </svg>
+    </button>
+    <div
+      class="welcome-screen"
+      id="envelope"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Thiệp mời"
+    >
+      <div class="welcome-screen-bg" id="hearts">
+        <div
+          style="
+            left: 30.328110058326274%;
+            top: -30px;
+            bottom: auto;
+            color: #a8323b;
+            font-size: 13.239518091082573px;
+            --sway: 28.045056760311127px;
+            animation: ambient-fall 24.864892337471247s
+              ease-in-out -21.653968180870642s infinite;
+          "
+          class="jsx-353cb38c53e4a74a absolute"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em">
+            <path
+              d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+            ></path>
+          </svg>
+        </div>
+        <div
+          style="
+            left: 17.2156402352266%;
+            top: -30px;
+            bottom: auto;
+            color: #ece4d8;
+            font-size: 22.52704422408715px;
+            --sway: 0.5086997570469975px;
+            animation: ambient-fall 25.939923219382763s
+              ease-in-out -10.373923639564312s infinite;
+          "
+          class="jsx-353cb38c53e4a74a absolute"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em">
+            <path
+              d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+            ></path>
+          </svg>
+        </div>
+        <div
+          style="
+            left: 70.28673367807642%;
+            top: -30px;
+            bottom: auto;
+            color: #c9a24a;
+            font-size: 17.490823671221733px;
+            --sway: -28.064687317237258px;
+            animation: ambient-fall 25.735697017982602s
+              ease-in-out -8.38276002209779s infinite;
+          "
+          class="jsx-353cb38c53e4a74a absolute"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em">
+            <path
+              d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+            ></path>
+          </svg>
+        </div>
+        <div
+          style="
+            left: 33.55705370660871%;
+            top: -30px;
+            bottom: auto;
+            color: #a8323b;
+            font-size: 22.95301177399233px;
+            --sway: 29.648285089060664px;
+            animation: ambient-fall 20.143269890919328s
+              ease-in-out -19.691254769751314s infinite;
+          "
+          class="jsx-353cb38c53e4a74a absolute"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em">
+            <path
+              d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+            ></path>
+          </svg>
+        </div>
+        <div
+          style="
+            left: 26.469557804521173%;
+            top: -30px;
+            bottom: auto;
+            color: #c9a24a;
+            font-size: 23.15696965251118px;
+            --sway: -12.885547913610935px;
+            animation: ambient-fall 25.567597473040223s
+              ease-in-out -13.424423354492045s infinite;
+          "
+          class="jsx-353cb38c53e4a74a absolute"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em">
+            <path
+              d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+            ></path>
+          </svg>
+        </div>
+        <div
+          style="
+            left: 83.32324994262308%;
+            top: -30px;
+            bottom: auto;
+            color: #c9a24a;
+            font-size: 22.533293027430773px;
+            --sway: -25.829533128999174px;
+            animation: ambient-fall 24.974357422441244s
+              ease-in-out -0.10417875222258054s infinite;
+          "
+          class="jsx-353cb38c53e4a74a absolute"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em">
+            <path
+              d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+            ></path>
+          </svg>
+        </div>
+        <div
+          style="
+            left: 9.044427201151848%;
+            top: -30px;
+            bottom: auto;
+            color: #a8323b;
+            font-size: 18.041713471524417px;
+            --sway: 4.726191689260304px;
+            animation: ambient-fall 23.068060817196965s
+              ease-in-out -0.3111351032288825s infinite;
+          "
+          class="jsx-353cb38c53e4a74a absolute"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em">
+            <path
+              d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+            ></path>
+          </svg>
+        </div>
+        <div
+          style="
+            left: 69.74547695368528%;
+            top: -30px;
+            bottom: auto;
+            color: #c9a24a;
+            font-size: 12.927935962565243px;
+            --sway: 23.722335817292333px;
+            animation: ambient-fall 20.770730067044497s
+              ease-in-out -7.488872562911941s infinite;
+          "
+          class="jsx-353cb38c53e4a74a absolute"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em">
+            <path
+              d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+            ></path>
+          </svg>
+        </div>
+        <div
+          style="
+            left: 18.21989078540355%;
+            top: -30px;
+            bottom: auto;
+            color: #ece4d8;
+            font-size: 22.310039413161576px;
+            --sway: 25.63739493023604px;
+            animation: ambient-fall 21.859994553029537s
+              ease-in-out -20.672057977395454s infinite;
+          "
+          class="jsx-353cb38c53e4a74a absolute"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em">
+            <path
+              d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+            ></path>
+          </svg>
+        </div>
+        <div
+          style="
+            left: 51.80270069278777%;
+            top: -30px;
+            bottom: auto;
+            color: #7a1f26;
+            font-size: 20.954792595934123px;
+            --sway: -15.57284370996058px;
+            animation: ambient-fall 18.015412013977766s
+              ease-in-out -0.6715260601425447s infinite;
+          "
+          class="jsx-353cb38c53e4a74a absolute"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em">
+            <path
+              d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+            ></path>
+          </svg>
+        </div>
+        <div
+          style="
+            left: 25.922949633095413%;
+            top: -30px;
+            bottom: auto;
+            color: #7a1f26;
+            font-size: 17.78661971958354px;
+            --sway: 5.172966560348868px;
+            animation: ambient-fall 24.570506004616618s
+              ease-in-out -23.242164605190787s infinite;
+          "
+          class="jsx-353cb38c53e4a74a absolute"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em">
+            <path
+              d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+            ></path>
+          </svg>
+        </div>
+        <div
+          style="
+            left: 91.75902127986774%;
+            top: -30px;
+            bottom: auto;
+            color: #c9a24a;
+            font-size: 12.577464719302952px;
+            --sway: -11.355045181699097px;
+            animation: ambient-fall 20.06618256494403s
+              ease-in-out -0.4162974501267686s infinite;
+          "
+          class="jsx-353cb38c53e4a74a absolute"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em">
+            <path
+              d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+      <div class="welcome-screen-box relative">
+        <div class="heart" id="seal">
+          <svg
+            style="fill: #f3e8de"
+            viewBox="0 0 24 24"
+            class="jsx-353cb38c53e4a74a w-7 h-7"
+          >
+            <path
+              d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+              class="jsx-353cb38c53e4a74a"
+            ></path>
+          </svg>
+        </div>
+        <div class="flower">
+          <div class="flower-wrap">
+            <img
+              class="left"
+              src="./images/theme/flower2-decoration.webp"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="flower">
+          <div class="flower-wrap">
+            <img
+              class="right"
+              src="./images/theme/flower2-decoration.webp"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="welcome-screen-content">
+          <div class="name">
+            <span class="text">Vũ Kỷ</span>
+            <span class="point">&</span>
+            <span class="text">Thu Trang</span>
+          </div>
+          <div class="line">
+            <div
+              class="d-line"
+              style="
+                background: linear-gradient(to right, transparent, #511419);
+              "
+            ></div>
+            <span class="ic">❦</span>
+            <div
+              class="d-line"
+              style="background: linear-gradient(to left, transparent, #511419)"
+            ></div>
+          </div>
+          <div class="date">29 tháng 11, 2026</div>
+          <div class="sub">Thân Mời</div>
+          <button class="open-btn" id="openBtn"><span>Mở thiệp</span></button>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center w-full">
+      <div class="container-body relative overflow-hidden w-full">
+        <div
+          aria-hidden="true"
+          class="pointer-events-none absolute inset-0 z-0"
+          style="
+            background-image: url(images/theme/paper.webp);
+            background-size: 100% auto;
+            background-position: center top;
+            mix-blend-mode: multiply;
+            opacity: 0.5;
+          "
+        ></div>
+        <section class="envelope-section relative pd-top">
+          <div
+            aria-hidden="true"
+            class="pointer-events-none absolute inset-0 z-0"
+            style="
+              background-image: url(images/theme/paper.webp);
+              background-size: 100% auto;
+              background-position: center top;
+              mix-blend-mode: multiply;
+              opacity: 0.5;
+            "
+          ></div>
+          <img
+            class="envelope-bg pointer-events-none absolute"
+            src="./images/couple/castle-background.webp"
+            alt=""
+          />
+          <h1 class="save-the-date">Save The Date</h1>
+
+          <div
+            class="envelope-main container flex justify-center items-center flex-col"
+          >
+            <!-- Phong bì: tất cả các lớp đều neo theo khung tỉ lệ 1013:1168 của envelope-background.webp -->
+            <div
+              class="envelope-wrapper relative z-10 w-[82%] max-w-[330px] md:max-w-[420px]"
+            >
+              <div class="envelope-box">
+                <!-- Ảnh bên trong phong bì -->
+                <div class="photo-inside">
+                  <div
+                    class=""
+                    style="
+                      animation: 6.5s ease-in-out 0.4s infinite normal none
+                        running drFloat;
+                      will-change: transform;
+                    "
+                  >
+                    <div class="photo-wrap">
+                      <img
+                        src="./images/couple/anhphongbi.webp"
+                        alt="Bức ảnh kỷ niệm"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <span
+                  aria-hidden="true"
+                  class="flower-inside absolute block pointer-events-none"
+                  ><span
+                    class="block"
+                    style="
+                      animation: 5s ease-in-out 0s infinite normal none running
+                        drFloat;
+                      will-change: transform;
+                    "
+                    ><img
+                      alt=""
+                      class="block w-full max-w-none object-contain drop-shadow-[3px_4px_3px_rgba(0,0,0,0.3)] rotate-[-17deg]"
+                      src="./images/theme/flower2-decoration.webp" /></span
+                ></span>
+                <!-- Thân sau: envelope-background.webp, chỉ hiện phần dưới đường bản lề -->
+                <div class="envelope-back pointer-events-none">
+                  <img src="./images/theme/envelope-background.webp" alt="" />
+                </div>
+
+                <!-- Nắp phong bì: cắt từ phần trên của envelope-background.webp, xoay quanh bản lề -->
+                <div class="envelope-flap pointer-events-none">
+                  <div class="flap-face flap-inner"></div>
+                  <div class="flap-face flap-outer"></div>
+                </div>
+
+                <!-- Thân trước -->
+                <div class="envelope-front pointer-events-none">
+                  <img src="./images/theme/envelope-cover.webp" alt="" />
+                </div>
+
+                <!-- Con dấu sáp trái tim (tách từ envelope-cover.webp), luôn nằm trên cùng để ghim nắp khi đóng -->
+                <img
+                  class="heart-seal pointer-events-none"
+                  src="./images/theme/heart-seal.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="envelope-name flex items-center flex-col relative">
+            <p class="name1">Vũ Kỷ</p>
+            <span class="point">&</span>
+            <p class="name1">Thu Trang</p>
+          </div>
+        </section>
+        <!-- Nội dung phía dưới tiếp tục cuộn bình thường sau khi mở xong -->
+        <section class="detail-section pd-top">
+          <div class="container flex justify-center">
+            <div class="detail-table relative">
+              <div class="flex-col detail-table-content">
+                <h2 class="detail-title">THÔNG TIN LỄ CƯỚI</h2>
+                <div class="detail-parents">
+                  <div class="detail-parents-col">
+                    <span class="detail-parents-sub">Nhà trai</span>
+                    <span class="detail-parents-name">Vũ Văn Khiêm</span>
+                    <span class="detail-parents-name">Doãn Thị Thơm</span>
+                    <span class="detail-parents-address"
+                      >Giao Minh, Ninh Bình</span
+                    >
+                  </div>
+                  <div class="line"></div>
+                  <div class="detail-parents-col">
+                    <span class="detail-parents-sub">Nhà gái</span>
+                    <span class="detail-parents-name">Phạm Văn Hiển</span>
+                    <span class="detail-parents-name">Phạm Thị Lương</span>
+                    <span class="detail-parents-address"
+                      >Giao Hòa, Ninh Bình</span
+                    >
+                  </div>
+                </div>
+                <div class="detail-title2">
+                  TRÂN TRỌNG BÁO TIN<br />LỄ THÀNH HÔN CỦA CON CHÚNG TÔI
+                </div>
+                <div class="detail-couplename">
+                  <h3 class="detail-couplename1">Vũ Kỷ</h3>
+                  <span class="detail-couplename2">&</span>
+                  <h3 class="detail-couplename1">Thu Trang</h3>
+                </div>
+                <div class="detail-title3">
+                  LỄ THÀNH HÔN ĐƯỢC CỬ HÀNH<br />TẠI TƯ GIA
+                </div>
+                <div class="detail-time">
+                  <div class="detail-time1">
+                    <span>VÀO LÚC 13:05</span>
+                    <span>CHỦ NHẬT</span>
+                  </div>
+                  <div class="detail-time2">
+                    <div class="detail-time2-col detail-time2-col1">
+                      <span>29</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="detail-time2-col detail-time2-col2">
+                      <span>THÁNG 11</span>
+                      <span>2026</span>
+                    </div>
+                  </div>
+                  <div class="detail-time3">
+                    (Tức ngày 21 tháng 10 năm Bính Ngọ)
+                  </div>
+                </div>
+              </div>
+              <div class="detail-flower">
+                <div
+                  class="detail-flower-wrap"
+                  style="
+                    animation: 4.5s ease-in-out 0.6s infinite normal none
+                      running drFloat;
+                    will-change: transform;
+                  "
+                >
+                  <img src="./images/theme/flower2-decoration.webp" alt="" />
+                </div>
+              </div>
+              <div class="detail-sticker">
+                <div
+                  class="detail-sticker-wrap"
+                  style="
+                    animation: 5.5s ease-in-out 0.6s infinite normal none
+                      running drFloat;
+                    will-change: transform;
+                  "
+                >
+                  <img src="./images/couple/couple1.webp" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="album-section pd-top relative">
+          <img
+            loading="lazy"
+            decoding="async"
+            class="section-bg pointer-events-none absolute"
+            src="./images/couple/castle-background.webp"
+            alt=""
+          />
+          <div class="container">
+            <h2 class="album-title center">AlBUM ẢNH</h2>
+          </div>
+          <div
+            class="stage no-auto-scroll"
+            id="stage"
+            aria-roledescription="carousel"
+            aria-label="Photo stack slider"
+          >
+            <div class="deck" id="deck"></div>
+            <div class="ctrl">
+              <button id="prev" type="button" aria-label="Previous">‹</button>
+              <span id="count">1/6</span>
+              <button id="next" type="button" aria-label="Next">›</button>
+            </div>
+          </div>
+        </section>
+        <section class="party-section pd-top">
+          <div class="container flex justify-center">
+            <div class="detail-table relative">
+              <div class="flex-col detail-table-content">
+                <h2 class="detail-title">THÔNG TIN TIỆC CƯỚI</h2>
+                <h3 class="party-title">TIỆC CƯỚI SẼ DIỄN RA VÀO LÚC:</h3>
+                <div class="detail-time">
+                  <div class="detail-time1">
+                    <span>VÀO LÚC 13:05</span>
+                    <span>CHỦ NHẬT</span>
+                  </div>
+                  <div class="detail-time2">
+                    <div class="detail-time2-col detail-time2-col1">
+                      <span>29</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="detail-time2-col detail-time2-col2">
+                      <span>THÁNG 11</span>
+                      <span>2026</span>
+                    </div>
+                  </div>
+                  <div class="detail-time3">
+                    (Tức ngày 21 tháng 10 năm Bính Ngọ)
+                  </div>
+                </div>
+                <div class="party-time">
+                  <div class="party-time-col">
+                    <span class="sub">ĐÓN KHÁCH</span>
+                    <span class="time">09:30</span>
+                  </div>
+                  <div class="party-time-col">
+                    <span class="sub">KHAI TIỆC</span>
+                    <span class="time">10:00</span>
+                  </div>
+                </div>
+                <div class="party-calendar">
+                  <div class="party-calendar-m">Tháng 11 / 2026</div>
+                  <div class="party-calendar-w">
+                    <span>T2</span>
+                    <span>T3</span>
+                    <span>T4</span>
+                    <span>T5</span>
+                    <span>T6</span>
+                    <span>T7</span>
+                    <span>CN</span>
+                  </div>
+                  <div class="party-calendar-d">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+                    <span>11</span>
+                    <span>12</span>
+                    <span>13</span>
+                    <span>14</span>
+                    <span>15</span>
+                    <span>16</span>
+                    <span>17</span>
+                    <span>18</span>
+                    <span>19</span>
+                    <span>20</span>
+                    <span>21</span>
+                    <span>22</span>
+                    <span>23</span>
+                    <span>24</span>
+                    <span>25</span>
+                    <span>26</span>
+                    <span>27</span>
+                    <span>28</span>
+                    <span class="choose">
+                      <svg
+                        viewBox="0 0 24 22"
+                        class="absolute inset-0 w-full h-full drop-shadow-sm"
+                        fill="#511419"
+                      >
+                        <path
+                          d="M12 21C12 21 1.5 13.5 1.5 7.5C1.5 4.46 3.96 2 7 2C8.76 2 10.35 2.81 11.4 4.09L12 4.8L12.6 4.09C13.65 2.81 15.24 2 17 2C20.04 2 22.5 4.46 22.5 7.5C22.5 13.5 12 21 12 21Z"
+                        ></path>
+                      </svg>
+                      <i>29</i>
+                    </span>
+                    <span>30</span>
+                  </div>
+                </div>
+                <div class="party-add">
+                  <a
+                    href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=Đám%20cưới%20của%20Trang%20và%20Kỷ&amp;dates=20261129T040000Z/20261129T060000Z&amp;ctz=Asia/Ho_Chi_Minh&amp;details=&amp;location=%C4%90%E1%BB%8Ba%20chi%CC%89%20c%E1%BB%A7a%20b%E1%BA%A1n"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="mt-3 inline-flex items-center justify-center text-sm underline underline-offset-4"
+                    style="color: rgb(236, 228, 216)"
+                  >
+                    <span dir="auto">Thêm vào lịch</span>
+                  </a>
+                </div>
+              </div>
+              <div class="party-sticker party-sticker1">
+                <div
+                  class="detail-sticker-wrap"
+                  style="
+                    animation: 5.5s ease-in-out 0.6s infinite normal none
+                      running drFloat;
+                    will-change: transform;
+                  "
+                >
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="./images/couple/couple2.webp"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="party-sticker party-sticker2">
+                <div
+                  class="detail-sticker-wrap"
+                  style="
+                    animation: 5.5s ease-in-out 0.6s infinite normal none
+                      running drFloat;
+                    will-change: transform;
+                  "
+                >
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="./images/couple/couple3.webp"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="countdown-section pd-top">
+          <div class="container flex justify-center flex-col">
+            <h2 id="title" class="countdown-title center">
+              ĐẾM NGƯỢC ĐẾN NGÀY VUI
+            </h2>
+            <div
+              id="countdown"
+              class="countdown-wrap flex justify-center items-center"
+            >
+              Đang tải...
+            </div>
+          </div>
+        </section>
+        <section class="map-section pd-top center relative">
+          <img
+            loading="lazy"
+            decoding="async"
+            class="section-bg pointer-events-none absolute"
+            src="./images/couple/castle-background.webp"
+            alt=""
+          />
+          <div class="container flex justify-center flex-col items-center">
+            <h2 class="map-title">TIỆC CƯỚI SẼ TỔ CHỨC TẠI</h2>
+            <div class="tab-container">
+              <!-- Thanh nút bấm chọn tab -->
+              <div class="tab-buttons">
+                <button class="tab-btn active" onclick="openTab(event, 'tab1')">
+                  Nhà trai
+                </button>
+                <button class="tab-btn" onclick="openTab(event, 'tab2')">
+                  Nhà gái
+                </button>
+                <div class="tab-indicator" id="indicator"></div>
+              </div>
+              <div class="tab-contents">
+                <div id="tab1" class="tab-content active">
+                  <h3>
+                    Xóm 5 xã Giao Thiện, Giao Thủy, Nam Định (Xóm Giao Thiện,
+                    Giao Minh, Ninh Bình)
+                  </h3>
+                  <div class="map-map">
+                    <div class="map-iframe">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.4628316162325!2d106.53842499999999!3d20.281100999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3149ff005e1cc43b%3A0xb52fd595721d7b09!2zTmjDoCB2xINuIGhvw6EgWMOzbSA1!5e0!3m2!1svi!2s!4v1793527622300!5m2!1svi!2s"
+                        width="1000"
+                        height="380"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      ></iframe>
+                    </div>
+                  </div>
+                  <a
+                    class="map-directions"
+                    href="https://www.google.com/maps/dir/?api=1&destination=20.275434125229374, 106.53320696386139"
+                    target="_blank"
+                  >
+                    <svg
+                      class="h-4 w-4 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+                    </svg>
+                    Chỉ đường
+                  </a>
+                </div>
+
+                <!-- Nội dung Tab 2 -->
+                <div id="tab2" class="tab-content">
+                  <h3>
+                    Xóm 12 xã Hồng Thuận, Giao Thủy, Nam Định (Thôn Hồng Phong,
+                    Giao Hòa, Ninh Bình)
+                  </h3>
+                  <div class="map-map">
+                    <div class="map-iframe">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467.7645852248457!2d106.50228790218517!3d20.29543690606263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313601007cbff3d5%3A0xa39cceb08ca71045!2zTkjDlE0gS8ONTkggSEnhur5OIFNFTg!5e0!3m2!1svi!2s!4v1792592422728!5m2!1svi!2s"
+                        width="1000"
+                        height="380"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      ></iframe>
+                    </div>
+                  </div>
+                  <a
+                    class="map-directions"
+                    href="https://www.google.com/maps/dir/?api=1&destination=20.295825160572775, 106.50311070686352"
+                    target="_blank"
+                  >
+                    <svg
+                      class="h-4 w-4 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+                    </svg>
+                    Chỉ đường
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="timeline-section pd-top">
+          <div class="container flex justify-center">
+            <div class="detail-table relative timeline-table">
+              <div class="flex-col detail-table-content">
+                <h2 class="detail-title">LỊCH TRÌNH NGÀY CƯỚI</h2>
+                <ol class="relative">
+                  <li>
+                    <span class="text">Ngày 28/11 - 13:00</span>
+                    <span class="dot"></span>
+                    <span class="text sub">Lễ ăn hỏi</span>
+                  </li>
+                  <li>
+                    <span class="text">Ngày 29/11 - 09:30</span>
+                    <span class="dot"></span>
+                    <span class="text sub">Đón khách</span>
+                  </li>
+                  <li>
+                    <span class="text">10:00</span>
+                    <span class="dot"></span>
+                    <span class="text sub">Bữa cơm thân mật</span>
+                  </li>
+                  <li>
+                    <span class="text">13:00</span>
+                    <span class="dot"></span>
+                    <span class="text sub">Lễ vu quy</span>
+                  </li>
+                </ol>
+              </div>
+              <div class="timeline-flower">
+                <div
+                  class="detail-flower-wrap"
+                  style="
+                    animation: 4.5s ease-in-out 0.6s infinite normal none
+                      running drFloat;
+                    will-change: transform;
+                  "
+                >
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="./images/theme/flower2-decoration.webp"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="comment-section pd-top relative z-10">
+          <div class="container flex items-center flex-col">
+            <div class="comment-wrap flex items-center flex-col w-full">
+              <div class="form-card no-auto-scroll">
+                <h2 class="comment-title">SỔ LƯU BÚT</h2>
+                <form id="form" autocomplete="off">
+                  <input
+                    class="field"
+                    id="name"
+                    name="name"
+                    placeholder="Nhập tên*"
+                    maxlength="50"
+                    required
+                  />
+                  <textarea
+                    class="field"
+                    id="msg"
+                    name="msg"
+                    placeholder="Nhập lời chúc*"
+                    maxlength="500"
+                    required
+                  ></textarea>
+                  <div class="actions">
+                    <button
+                      type="button"
+                      class="btn-suggest"
+                      id="openSuggest"
+                      aria-label="Gợi ý lời chúc"
+                    >
+                      ✨
+                    </button>
+                    <button type="submit" class="btn-send">Gửi lời chúc</button>
+                  </div>
+                </form>
+                <div class="comment-flower">
+                  <div
+                    class="detail-flower-wrap"
+                    style="
+                      animation: 4.5s ease-in-out 0.6s infinite normal none
+                        running drFloat;
+                      will-change: transform;
+                    "
+                  >
+                    <img
+                      loading="lazy"
+                      decoding="async"
+                      src="./images/theme/flower1-decoration.webp"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="list" id="list" aria-live="polite"></div>
+              <dialog
+                id="dlg"
+                aria-labelledby="dlgTitle"
+                class="no-auto-scroll"
+              >
+                <div class="dlg-head">
+                  <h2 id="dlgTitle">✨ Lời chúc gợi ý cho bạn</h2>
+                  <button
+                    type="button"
+                    class="dlg-x"
+                    data-close
+                    aria-label="Đóng"
+                  >
+                    ×
+                  </button>
+                </div>
+                <p class="dlg-sub">
+                  Chọn một lời chúc bạn thích hoặc tạo lại để xem thêm gợi ý
+                </p>
+                <div class="options" id="options"></div>
+                <div class="dlg-foot">
+                  <button type="button" class="btn-more" id="more">
+                    ✨ Tạo thêm
+                  </button>
+                  <button type="button" class="btn-close" data-close>
+                    Đóng
+                  </button>
+                </div>
+              </dialog>
+            </div>
+          </div>
+        </section>
+        <section class="gif-section pd-top center relative">
+          <img
+            loading="lazy"
+            decoding="async"
+            class="section-bg pointer-events-none absolute"
+            src="./images/couple/castle-background.webp"
+            alt=""
+          />
+          <div class="container flex justify-center flex-col items-center">
+            <h2 class="gif-title">HỘP QUÀ MỪNG</h2>
+            <button class="btn-open gif-btn" onclick="openPopup()">
+              <div class="gif-wrap">
+                <span
+                  class="star"
+                  style="
+                    font-size: 20.9px;
+                    top: 6%;
+                    left: 12%;
+                    animation: ienvSparkleAnim 2s ease-in-out infinite;
+                  "
+                  >✦</span
+                >
+                <span
+                  class="star"
+                  style="
+                    font-size: 15.2px;
+                    top: 14%;
+                    right: 8%;
+                    animation: ienvSparkleAnim 2s ease-in-out 0.6s infinite;
+                  "
+                  >✦</span
+                >
+                <span
+                  class="star"
+                  style="
+                    font-size: 13.3px;
+                    top: 34%;
+                    left: 3%;
+                    animation: ienvSparkleAnim 2s ease-in-out 1.2s infinite;
+                  "
+                  >✦</span
+                >
+                <span
+                  class="star"
+                  style="
+                    font-size: 13.3px;
+                    top: 24%;
+                    right: 3%;
+                    animation: ienvSparkleAnim 2s ease-in-out 1.7s infinite;
+                  "
+                  >✦</span
+                >
+                <div class="gif-box">
+                  <div
+                    class="shadow"
+                    style="
+                      left: 50%;
+                      bottom: -6px;
+                      width: 125.4px;
+                      height: 11px;
+                      margin-left: -62.7px;
+                      border-radius: 50%;
+                      background-color: rgba(0, 0, 0, 0.45);
+                      filter: blur(4px);
+                      z-index: 0;
+                      will-change: transform, opacity;
+                      animation: ienvShadowPulse 3s ease-in-out infinite;
+                      position: absolute;
+                    "
+                  ></div>
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    style="
+                      width: 100%;
+                      height: 100%;
+                      object-fit: contain;
+                      object-position: center bottom;
+                      rotate: -10deg;
+                      z-index: 2;
+                      filter: drop-shadow(rgba(0, 0, 0, 0.22) 0px 10px 18px);
+                      will-change: transform;
+                      transition: transform 0.35s ease;
+                      transform-origin: 50% 92%;
+                    "
+                    class="img1"
+                    src="./images/theme/minimalism_darkred.webp"
+                    alt=""
+                  />
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    style="
+                      width: 100%;
+                      height: 100%;
+                      object-fit: contain;
+                      object-position: center bottom;
+                      transform-origin: 50% 100%;
+                      transform: translateX(20%) translateY(-10%)
+                        scale(-0.8, 0.8) rotate(-15deg);
+                      z-index: 1;
+                      filter: drop-shadow(rgba(0, 0, 0, 0.18) 0px 8px 14px);
+                      will-change: transform;
+                      transition: rotate 0.3s ease;
+                    "
+                    class="img2"
+                    src="./images/theme/minimalism_darkred.webp"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <span
+                style="
+                  animation: ienvHintPulse 2s ease-in-out infinite;
+                  color: rgb(81, 20, 25);
+                  white-space: nowrap;
+                  font-weight: 500;
+                  font-size: 12px;
+                "
+                >Nhấn để mở</span
+              >
+            </button>
+            <div
+              id="myPopup"
+              class="popup-overlay"
+              onclick="closePopupOnOverlay(event)"
+              style="display: none"
+            >
+              <div class="popup-content gif-popup">
+                <span class="btn-close" onclick="closePopup()">&times;</span>
+                <div class="gif-popup-title">HỘP QUÀ MỪNG</div>
+                <div class="gif-popup-wrap">
+                  <div class="gif-popup-col">
+                    <div class="gif-popup-name">Chú rể - VU KY</div>
+                    <div class="gif-popup-qr">
+                      <img
+                        loading="lazy"
+                        decoding="async"
+                        src="./images/couple/qr1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="gif-popup-text">
+                      <span class="text text1"> Vietcombank </span>
+                      <span class="text text2"> 1045195132 </span>
+                      <span class="text text3"> VU KY </span>
+                    </div>
+                    <div class="gif-popup-download">
+                      <button
+                        onclick="
+                          downloadLocalImage(
+                            './images/couple/qr1.jpg',
+                            'QR chú rể',
+                          )
+                        "
+                      >
+                        <svg
+                          class="w-3 h-3"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                          ></path>
+                        </svg>
+                        <span>Lưu QR</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="gif-popup-col">
+                    <div class="gif-popup-name">Cô dâu - PHAM THU TRANG</div>
+                    <div class="gif-popup-qr">
+                      <img
+                        loading="lazy"
+                        decoding="async"
+                        src="./images/couple/qr2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="gif-popup-text">
+                      <span class="text text1"> Vietcombank </span>
+                      <span class="text text2"> 9358829872 </span>
+                      <span class="text text3"> PHAM THU TRANG </span>
+                    </div>
+                    <div class="gif-popup-download">
+                      <button
+                        onclick="
+                          downloadLocalImage(
+                            './images/couple/qr2.jpg',
+                            'QR cô dâu',
+                          )
+                        "
+                      >
+                        <svg
+                          class="w-3 h-3"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                          ></path>
+                        </svg>
+                        <span>Lưu QR</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="pd-top center">
+          <div class="container">
+            Sự hiện diện của quý khách là niềm vinh hạnh của gia đình chúng tôi!
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
